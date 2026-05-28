@@ -86,6 +86,7 @@ table.main tr:hover td { background:#f8fafc; }
   <div class="tab active" onclick="showTab('schedule')">📅 Day Schedule</div>
   <div class="tab" onclick="showTab('tics')">👩‍🏫 TIC Groups</div>
   <div class="tab" onclick="showTab('stations')">🎡 Activity Stations</div>
+  <div class="tab" onclick="showTab('deptplans')">🎨 Department Plans</div>
   <div class="tab" onclick="showTab('fungames')">🎮 Fun Games</div>
   <div class="tab" onclick="showTab('sports')">🏃 Outdoor Sports</div>
   <div class="tab" onclick="showTab('cooking')">🍳 Cooking</div>
@@ -99,7 +100,7 @@ table.main tr:hover td { background:#f8fafc; }
   <div class="grid-2">
 
     <div class="card">
-      <div class="card-hdr" style="background:#1f3864;color:#fff;">☀️ Day 1 — Thursday, 29 May 2026</div>
+      <div class="card-hdr" style="background:#1f3864;color:#fff;">☀️ Day 1 — Friday, 29 May 2026</div>
       <div class="card-body">
         <div class="timeline">
           <div class="tl-item"><div class="tl-time">6:30 AM</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-title">All Teachers Report</div><div class="tl-sub">TICs collect student group lists &amp; briefing sheets</div></div></div>
@@ -124,7 +125,7 @@ table.main tr:hover td { background:#f8fafc; }
     </div>
 
     <div class="card">
-      <div class="card-hdr" style="background:#0d2347;color:#fff;">🌙 Day 2 — Friday, 30 May 2026</div>
+      <div class="card-hdr" style="background:#0d2347;color:#fff;">🌙 Day 2 — Saturday, 30 May 2026</div>
       <div class="card-body">
         <div class="timeline">
           <div class="tl-item"><div class="tl-time">6:30 AM</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-title">All Teachers Report</div><div class="tl-sub">Same as Day 1</div></div></div>
@@ -1044,6 +1045,350 @@ table.main tr:hover td { background:#f8fafc; }
 </div>
 </div>
 
+<!-- ══ TAB: DEPARTMENT PLANS ══ -->
+<div id="tab-deptplans" class="tab-content">
+<div class="section">
+  <div class="alert-info">
+    🎨 <strong>Department Activity Plans:</strong> Detailed curriculum designs, materials lists, and instructions compiled directly from Art &amp; Craft, Dance, Music, and Fireless Cooking department coordinators.
+  </div>
+
+  <div class="filter-bar" style="margin-bottom:18px;">
+    <button class="filter-btn active" onclick="showDept('all', this)">🌐 All Departments</button>
+    <button class="filter-btn" onclick="showDept('artcraft', this)">🎨 Art &amp; Craft</button>
+    <button class="filter-btn" onclick="showDept('dance', this)">💃 Dance</button>
+    <button class="filter-btn" onclick="showDept('music', this)">🎵 Music</button>
+    <button class="filter-btn" onclick="showDept('cooking', this)">🥗 Fireless Cooking</button>
+  </div>
+
+  <!-- DEPARTMENT: ART & CRAFT -->
+  <div class="dept-card card" data-dept="artcraft">
+    <div class="card-hdr" style="background:#86198f;color:#fff;">🎨 Art &amp; Craft Department Curriculum — Mr. Prashant + Ms. Nidhi</div>
+    <div class="card-body">
+      <p style="font-size:13px; margin-bottom:12px; color:#555;">Each grade band works on a dedicated creative take-home project. TICs must ensure students bring their specific household materials from home.</p>
+      <table class="main" style="margin-bottom:16px;">
+        <thead>
+          <tr>
+            <th style="background:#86198f; width:20%;">Grade Band</th>
+            <th style="background:#86198f; width:10%;">Schedule</th>
+            <th style="background:#86198f; width:22%;">Take-Away Project</th>
+            <th style="background:#86198f; width:24%;">Student Brings from Home</th>
+            <th style="background:#86198f;">School Provides (From Station Inventory)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pre-Primary (Nursery, LKG, UKG)</strong></td>
+            <td>Both Days</td>
+            <td><strong>Paper-Plate Mask</strong> (D1)<br><strong>Sock Puppet</strong> (D2)</td>
+            <td>1 clean paper plate, 1 old clean single sock, child-safe blunt scissors</td>
+            <td>Tempera paint, brushes, colorful feathers, googly eyes, glue sticks, elastic bands</td>
+          </tr>
+          <tr>
+            <td><strong>Lower Primary (Class I &amp; II)</strong></td>
+            <td>Both Days</td>
+            <td><strong>Newspaper Hat/Boat</strong> (D1)<br><strong>Decorated Pencil Box</strong> (D2)</td>
+            <td>1 full sheet of newspaper (centre spread), empty matchbox or toothpaste box (washed)</td>
+            <td>Colored pencils, crayons, sketches, fabric glue, colored sheets, decals, sequins</td>
+          </tr>
+          <tr>
+            <td><strong>Upper Primary (Class III, IV, V)</strong></td>
+            <td>Both Days</td>
+            <td><strong>Friendship Band</strong> (D1)<br><strong>Madhubani Mini-Canvas</strong> (D2)</td>
+            <td>30 cm of 3 different colored threads (pre-knotted), 1 used greeting/invitation card</td>
+            <td>Fine black liner pens, watercolours, motif templates, student brushes, lanyard tubes</td>
+          </tr>
+          <tr>
+            <td><strong>Middle School (Class VI, VII, VIII)</strong></td>
+            <td>Day 2 only</td>
+            <td><strong>Calligraphy Bookmark</strong></td>
+            <td>1 plain index card or strip of greeting card (3 cm × 12 cm)</td>
+            <td>Specialty calligraphy pens, colored inks, ribbons, single hole punches, tassels</td>
+          </tr>
+          <tr>
+            <td><strong>Senior School (Class IX &amp; X)</strong></td>
+            <td>Day 2 only</td>
+            <td><strong>Mandala Postcard</strong> &amp; Mural contribution</td>
+            <td>1 used greeting/invitation card (clean back)</td>
+            <td>Acrylic paints, wide flat brushes, mural wall grid template, masking tape, drop cloths</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h4 style="color:#86198f; font-size:13px; margin-bottom:8px;">⏱️ Madhubani / Drawing Lesson Flow (Example: Upper Primary)</h4>
+      <table class="main">
+        <thead>
+          <tr>
+            <th style="background:#a21caf; width:15%;">Timeline</th>
+            <th style="background:#a21caf; width:35%;">Activity Step</th>
+            <th style="background:#a21caf;">TIC &amp; Specialist Duties</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>00 – 05 Mins</strong></td>
+            <td>Specialist Intro</td>
+            <td>Anchor artist displays finished Madhubani models; explains the fish, sun, and lotus motif concepts.</td>
+          </tr>
+          <tr>
+            <td><strong>05 – 10 Mins</strong></td>
+            <td>Kit Distribution</td>
+            <td>TICs distribute A3 papers, fine black liner pens, motif templates, watercolours, and brushes to students.</td>
+          </tr>
+          <tr>
+            <td><strong>10 – 25 Mins</strong></td>
+            <td>Trace &amp; Outline</td>
+            <td>Students place the template under their card/paper, draw in pencil, and trace over it in bold black liner.</td>
+          </tr>
+          <tr>
+            <td><strong>25 – 45 Mins</strong></td>
+            <td>Color Fill</td>
+            <td>Students apply watercolors using a traditional 3-tone color palette under artist supervision.</td>
+          </tr>
+          <tr>
+            <td><strong>45 – 55 Mins</strong></td>
+            <td>Sign-off &amp; Dry</td>
+            <td>Students write their name, class section, and date, stamping their artwork before placing it on drying lines.</td>
+          </tr>
+          <tr>
+            <td><strong>55 – 60 Mins</strong></td>
+            <td>Lanyard Pack</td>
+            <td>Once dried, students roll their canvas and slide it into a lanyard tube for safe transport home.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- DEPARTMENT: DANCE -->
+  <div class="dept-card card" data-dept="dance">
+    <div class="card-hdr" style="background:#be185d;color:#fff;">💃 Dance Department Plan — Ms. Debika + Ms. Avni</div>
+    <div class="card-body">
+      <p style="font-size:13px; margin-bottom:12px; color:#555;">Objectives: Encourage student participation, build confidence, physical fitness, coordination, and cultural learning through rhythmic movements. Classical/Folk sessions are led by Ms. Debika; Western and Zumba energy slots are led by Ms. Avni.</p>
+      <table class="main">
+        <thead>
+          <tr>
+            <th style="background:#be185d; width:20%;">Grade Band</th>
+            <th style="background:#be185d; width:35%;">Curriculum &amp; Styles Covered</th>
+            <th style="background:#be185d;">Specialist Song Selections &amp; Practice Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Nursery</strong></td>
+            <td>Action play dance, freeze-movement, and basic step-matching.</td>
+            <td>
+              <a href="https://youtube.com/watch?v=MItgqbfw9ag" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Baby Shark Dance Routine</a><br>
+              <a href="https://youtube.com/watch?v=mPhai2tjWBI" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Kids Freeze Dance Practice</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>LKG</strong></td>
+            <td>Creative storytelling through movement, step repetition.</td>
+            <td>
+              <a href="https://youtube.com/watch?v=3QvBpDLgAWg" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Chuku Chuku Train Song</a><br>
+              <a href="https://youtu.be/FPsBK1sVMM4" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Kindergarten Action Rhythms</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>UKG</strong></td>
+            <td>Semi-folk fusion, basic footwork drills.</td>
+            <td>
+              <a href="https://youtu.be/Eaw2OKc5HQk" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Lakdi Ki Kathi Choreography</a><br>
+              <a href="https://youtube.com/watch?v=7mbzZu9lo_8" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 UKG Folk Beats</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Class I &amp; II</strong></td>
+            <td>Primary folk dance, beat synching, arm coordination.</td>
+            <td>
+              <a href="https://youtu.be/LtxwSJ2s-lA" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Folk Dance Track A</a><br>
+              <a href="https://youtu.be/xIob3OjpnFg" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Bollywood Kids Dance B</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Class III - V</strong></td>
+            <td>Sub-junior semi-classical fusion, hand mudras, formations.</td>
+            <td>
+              <a href="https://youtube.com/watch?v=1gukvtH_a3I" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Semi-Classical Fusion Track</a><br>
+              <a href="https://youtube.com/watch?v=xRrZbSqT1NQ" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Bollywood Beats III-V</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Class VI - VIII</strong></td>
+            <td>Traditional folk and classical hand mudras, expressive mime.</td>
+            <td>
+              <a href="https://youtube.com/watch?v=lCfQjHdTdV0" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Traditional Folk Dance 1</a><br>
+              <a href="https://youtube.com/watch?v=3pj-amo5abQ" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Folk Beats 2</a><br>
+              <a href="https://youtube.com/watch?v=BTIiYYdGRa4" target="_blank" style="color:#be185d; text-decoration:none; font-weight:700;">🔗 Classical Kathak Drills</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Western &amp; Zumba (All)</strong></td>
+            <td>High-energy zumba routines, body fitness, pop styling.</td>
+            <td>Led dynamically by Ms. Avni in parallel rotation blocks inside MP Hall.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- DEPARTMENT: MUSIC -->
+  <div class="dept-card card" data-dept="music">
+    <div class="card-hdr" style="background:#0369a1;color:#fff;">🎵 Music Department Curriculum — Mr. Santu Goswami</div>
+    <div class="card-body">
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:16px; margin-bottom:16px;">
+        <div style="border:1px solid #bae6fd; background:#f0f9ff; border-radius:6px; padding:12px;">
+          <h4 style="color:#0369a1; font-size:14px; margin-bottom:8px;">🥁 Rhythm &amp; Percussion (Nursery to Class X)</h4>
+          <p style="font-size:12px; line-height:1.5; color:#334155;">
+            Focuses on developing students' internal clock, rhythmic accuracy, and team synchronization. 
+            Students will practice body percussions (synchronized chest thumps, leg slaps, snaps) and use rented **boomwhacker sound tubes** to perform basic melody and chord patterns.
+          </p>
+        </div>
+        <div style="border:1px solid #bae6fd; background:#f0f9ff; border-radius:6px; padding:12px;">
+          <h4 style="color:#0369a1; font-size:14px; margin-bottom:8px;">🎤 Vocal Training &amp; Action Rhymes</h4>
+          <p style="font-size:12px; line-height:1.5; color:#334155;">
+            Special voice modulation drills for pre-primary students focusing on pitch-matching, breathing control, and active choral performance. Action Rhymes circles are set up for youngest cohorts to teach beat retention.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="border-color:#bae6fd; box-shadow:none; margin-bottom:0;">
+        <div class="card-hdr" style="background:#e0f2fe; color:#0369a1; border-bottom:1px solid #bae6fd;">🎼 The Official Camp Anthem — "Hum Honge Kamyab" (Custom Verse 4)</div>
+        <div class="card-body">
+          <p style="font-size:12px; margin-bottom:8px; line-height:1.5; color:#444;">
+            All music classes will include a 15-minute training block to rehearse the camp anthem. Music Teacher Mr. Santu leads the training with the customized Verse 4 celebrating school pride:
+          </p>
+          <div style="background:#fff; border-left:4px solid #0369a1; padding:10px 14px; font-style:italic; font-size:13px; font-family:Georgia,serif; line-height:1.6; color:#0f172a;">
+            "Mann mein hai vishwas, poora hai vishwas,<br>
+            Hum seekhenge aur khelenge aaj ke din...<br>
+            Discover, Create and Play, Goenkans every day,<br>
+            Poora hai vishwas, kamyab hum sab ek din!"
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEPARTMENT: FIRELESS COOKING -->
+  <div class="dept-card card" data-dept="cooking">
+    <div class="card-hdr" style="background:#15803d;color:#fff;">🥗 Fireless Cooking Recipe Directory — Ms. Priyanka Roy</div>
+    <div class="card-body">
+      <div class="alert-warn" style="margin-top:0; border-color:#86efac; background:#f0fdf4; color:#14532d;">
+        ⚠️ <strong>PARENT SAFETY DIRECTIVE (TICs to reinforce in Class groups):</strong> 
+        Ensure parents send all fruits and vegetables pre-washed and pre-cut/sliced from home in clean, labeled, child-safe containers. <strong>No knives, metal peelers, or sharp tools are permitted on campus.</strong>
+      </div>
+      
+      <div style="margin-bottom:12px;">
+        <input type="text" id="recipe-search" onkeyup="searchRecipes()" placeholder="🔍 Search recipes by Class Teacher or Class (e.g. Nursery, III B, Aswani, sandwich)..." class="tic-search" style="width:100%; max-width:100%; padding:10px 16px; border:2px solid #86efac; border-radius:24px;">
+      </div>
+
+      <table class="main" id="recipe-table" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <thead>
+          <tr>
+            <th style="background:#15803d; width:12%;">Class</th>
+            <th style="background:#15803d; width:18%;">Class Teacher</th>
+            <th style="background:#15803d; width:22%;">Recipes Planned</th>
+            <th style="background:#15803d;">Ingredients (To be sent from home in named bags/boxes)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pre-Nursery</strong></td>
+            <td>Ms. Yanki</td>
+            <td><strong>Banana Biscuit Sandwich</strong><br><strong>Fruit Salad / Fruit Chaat</strong></td>
+            <td>🍪 Marie/sweet biscuits (3 pcs), 🍌 banana slices (4-5), 🍫 chocolate syrup/jam (1 tbsp).<br>🍎 apple pre-cut (½), 🍌 banana (½), 🍇 grapes/pomegranate (8-10), 🍯 honey (1 tsp).</td>
+          </tr>
+          <tr>
+            <td><strong>Nursery</strong></td>
+            <td>Ms. Maria</td>
+            <td><strong>Fruit Salad / Fruit Chaat</strong></td>
+            <td>🍎 apple pieces (½), 🥭 mango pre-sliced (½), 🟧 papaya pieces (½ cup), 🔴 pomegranate seeds (2 tbsp), 🟢 guava sliced (½), 🍇 grapes (10-12), 🍋 lemon (½), 🧂 chaat masala (1 tsp).</td>
+          </tr>
+          <tr>
+            <td><strong>KG</strong></td>
+            <td>Ms. Arpana</td>
+            <td><strong>Rainbow Fruit Chaat Cups</strong><br><strong>Smiley Biscuit Sandwich</strong></td>
+            <td>🍎 apple pre-cut (½), 🍌 banana sliced (½), 🍇 grapes (8-10), 🔴 pomegranate (2 tbsp), 🧂 chaat masala/honey (1 tsp).<br>🍪 Marie/Oreo (4 pcs), 🍫 spread/jam (1 tbsp), 🍌 banana slices (4-5), 🍬 Gems (8-10 pcs).</td>
+          </tr>
+          <tr>
+            <td><strong>Class I A</strong></td>
+            <td>Ms. Susmita</td>
+            <td><strong>Bhel Puri Corner</strong><br><strong>Biscuit Decoration Activity</strong></td>
+            <td>🌾 puffed rice (1 cup), 🧅 chopped onion (2 tbsp), 🍅 chopped tomato (2 tbsp), 🥜 peanuts (2 tbsp), 🌿 coriander (1 tbsp), 🍋 lemon (½).<br>🍪 sweet biscuits (4), 🍦 fresh cream (1 tbsp), 🍬 Gems (8-10), 🍫 chocolate syrup, ½ cup mixed fruits.</td>
+          </tr>
+          <tr>
+            <td><strong>Class I B</strong></td>
+            <td>Ms. Bindu</td>
+            <td><strong>Smiley Biscuit Sandwich</strong><br><strong>Fruit Chaat</strong></td>
+            <td>🍪 sweet biscuits (1 packet), 🍫 spread/jam (3-4 tbsp), 🍌 sliced banana (1), 🍬 Gems/choco chips (2 tbsp).<br>🍎 apple cut (1 cup), 🍌 banana sliced (1 cup), 🍇 grapes (15-20), 🥭 mango cut (1 cup), 🧂 chaat masala, 🍯 honey.</td>
+          </tr>
+          <tr>
+            <td><strong>Class II A</strong></td>
+            <td>Ms. Yachna</td>
+            <td><strong>Fruit Salad Fun</strong><br><strong>Vegetable Sandwich Making</strong></td>
+            <td>🍌 1 small banana, 🍎 ½ apple pre-cut, 🍇 10-12 grapes, 🥭 ½ mango, 🟧 papaya pieces (½ cup).<br>🍞 2 bread slices, 🥒 4-5 cucumber slices, 🍅 3-4 tomato slices, 🧈 1 tbsp butter, 🧀 1 cheese slice, 🥔 boiled potato slices (3-4).</td>
+          </tr>
+          <tr>
+            <td><strong>Class II B</strong></td>
+            <td>Ms. Bipasha</td>
+            <td><strong>Cheese Sandwich</strong><br><strong>Fruit Salad with Honey</strong></td>
+            <td>🍞 bread slices (8), 🧀 cheese slices/spread (4 tbsp), 🧈 butter (4 tbsp), 🥒 cucumber sliced (1), 🍅 tomato sliced (1) (per group of 4).<br>🍎 apple cut (1), 🍌 bananas sliced (2), 🍇 grapes (20-25), 🟧 papaya pieces (1 cup), 🍯 honey (2 tbsp).</td>
+          </tr>
+          <tr>
+            <td><strong>Class III A</strong></td>
+            <td>Ms. Beauty</td>
+            <td><strong>Vegetable Sandwich</strong></td>
+            <td>🍞 bread slices (2), 🧈 butter/mayo (1 tbsp), 🥒 cucumber (4-5 slices), 🍅 tomato (3-4 slices), 🥔 boiled potato sliced (3-4), 🧅 onion sliced (1 tbsp), 🧂 salt &amp; black pepper, 🍅 ketchup (1 tbsp).</td>
+          </tr>
+          <tr>
+            <td><strong>Class III B</strong></td>
+            <td>Ms. Saniya</td>
+            <td><strong>Curd Dip With Veggies</strong><br><strong>Lemon Mint Drink</strong></td>
+            <td>🥣 curd (1 cup), 🥒 cucumber sticks (1), 🥕 carrot sticks (1), 🫑 capsicum strips (1), salt, black pepper, mint leaves (per group of 4).<br>🍋 lemons (2), mint leaves (10-12), sugar syrup (4 tbsp), cold water (1L), ½ tsp black salt (per group of 4).</td>
+          </tr>
+          <tr>
+            <td><strong>Class IV A</strong></td>
+            <td>Ms. Sumitra</td>
+            <td><strong>Rainbow Fruit Chaat</strong><br><strong>Vegetable Sandwich</strong></td>
+            <td>🍎 apple (1), 🍌 banana (1), 🍊 orange peeled (1), 🥒 cucumber (1), 🍇 grapes (20-25), chaat masala, black salt, lemon (per group of 4).<br>🍞 bread slices (8), 🥒 cucumber (1), 🍅 tomato (1), 🥔 boiled potato (1), 🧈 butter (4 tbsp), 🌿 green chutney (4 tbsp), salt/pepper.</td>
+          </tr>
+          <tr>
+            <td><strong>Class IV B</strong></td>
+            <td>Mr. Raja</td>
+            <td><strong>Healthy Sprout &amp; Corn Chaat</strong><br><strong>Double-Decker Pinwheel Sandwich</strong></td>
+            <td>🌱 boiled sprouts (1 small cup), 🌽 boiled sweet corn (½ cup), 🥒 chopped cucumber (2 tbsp), 🍅 chopped tomato (2 tbsp), 🔴 pomegranate seeds (1 tbsp), chaat masala, lemon, sev.<br>🍞 fresh bread slices (3, crust pre-removed), 🧈 butter/green chutney (1-2 tsp), 🍅 ketchup/cheese spread (1-2 tsp), 🥕 2 tbsp grated carrot &amp; capsicum mix.</td>
+          </tr>
+          <tr>
+            <td><strong>Class IV C</strong></td>
+            <td>Mr. Anil</td>
+            <td><strong>Fruit Salad Fun</strong><br><strong>Biscuit Sandwich Delight</strong></td>
+            <td>🍌 banana (1), 🍎 apple cut (½), 🍇 grapes (10-12), 🥭 mango/papaya pieces (½ cup), honey/chaat masala.<br>🍪 biscuits (4), 🍫 chocolate spread/jam (1 tbsp), 🍌 banana slices (4-5).</td>
+          </tr>
+          <tr>
+            <td><strong>Class V A</strong></td>
+            <td>Mr. Aswani</td>
+            <td><strong>Bhel Puri</strong><br><strong>Corn Chaat</strong></td>
+            <td>🌾 puffed rice (4 cups), 🌾 sev (1 cup), 🧅 onion (½ cup), 🍅 tomato (½ cup), 🥔 boiled potato chopped (1), 🥜 peanuts (½ cup), chutneys, chaat masala.<br>🌽 boiled sweet corn (2 cups), 🧅 onion (½ cup), 🍅 tomato (½ cup), lemon, salt, chaat masala.</td>
+          </tr>
+          <tr>
+            <td><strong>Class V B</strong></td>
+            <td>Ms. Priyanka</td>
+            <td><strong>Double-Decker Ribbon Sandwich</strong><br><strong>Tangy Street-Style Bhelpuri</strong></td>
+            <td>🍞 bread slices (12), 🌿 green mint chutney (½ cup), 🍅 ketchup/spread (½ cup), 🥒 cucumbers (2), 🍅 tomatoes (4) (per group of 4).<br>🌾 murmura (6 cups), 🌾 sev/papdi (2 cups), 🥔 potato/tomato chopped (1 cup), tamarind chutney (½ cup), green chutney (½ cup), chaat masala, coriander.</td>
+          </tr>
+          <tr>
+            <td><strong>Class V C</strong></td>
+            <td>Mr. Uttam</td>
+            <td><strong>Mithila Makhana &amp; Peanut Chaat</strong><br><strong>Traditional Sattu Energy Cooler</strong></td>
+            <td>⚪ roasted makhana (2 cups), 🥜 roasted peanuts (1 cup), 🥒 cucumber chopped (1), 🍅 tomato chopped (1), 🍋 lemon (1), chaat masala, salt, coriander (per group of 4).<br>🥣 sattu (1 cup), chilled water (1L), lemons (2), cumin powder, black salt, jaggery (3-4 tbsp), mint.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
 <div class="footer">GoenkanSummer 2026 · GD Goenka Public School, Darbhanga ·
 Updated: <strong>28 May 2026 — Full 926-student data · 30 sections · TICs from timetable</strong></div>
 
@@ -1054,7 +1399,21 @@ function showTab(name) {
   document.getElementById('tab-' + name).classList.add('active');
   event.target.classList.add('active');
 }
+function showDept(dept, btn) {
+  document.querySelectorAll('#tab-deptplans .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.dept-card').forEach(card => {
+    card.style.display = (dept === 'all' || card.dataset.dept === dept) ? '' : 'none';
+  });
+}
+function searchRecipes() {
+  var q = document.getElementById('recipe-search').value.toLowerCase();
+  document.querySelectorAll('#recipe-table tbody tr').forEach(row => {
+    row.style.display = row.innerText.toLowerCase().includes(q) ? '' : 'none';
+  });
+}
 function filterGames(band, btn) {
+
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   document.querySelectorAll('.fg-table tbody tr').forEach(row => {
